@@ -99,12 +99,12 @@ img:hover {
     box-sizing: border-box;
 }
 .sidebar {
-    flex: 1 1 200px;
+    flex: 1;
     padding: 10px;
     text-align: center;
 }
 .main-content {
-    flex: 3 1 600px;
+    flex: 3;
     padding: 10px;
 }
 table {
@@ -138,13 +138,5 @@ table tr:nth-child(even) {
     }
     section {
         grid-column: 1;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .sidebar,
-    .main-content {
-        flex: 1 1 100%;
-        max-width: 100%;
     }
 }
