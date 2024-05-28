@@ -91,19 +91,20 @@ img:hover {
     transform: scale(1.5);
 }
 .container {
-    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 10px;
+    box-sizing: border-box;
 }
 .sidebar {
-    width: 200px;
-    float: left;
+    flex: 1 1 200px;
     padding: 10px;
     text-align: center;
 }
 .main-content {
-    width: 600px;
-    margin-left: 210px;
+    flex: 3 1 600px;
     padding: 10px;
 }
 table {
@@ -137,5 +138,13 @@ table tr:nth-child(even) {
     }
     section {
         grid-column: 1;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .sidebar,
+    .main-content {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
